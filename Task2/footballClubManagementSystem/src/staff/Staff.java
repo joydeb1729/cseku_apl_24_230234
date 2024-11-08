@@ -1,6 +1,9 @@
+package staff;
+import interfaces.SalaryManageable;
+
 public class Staff implements SalaryManageable {
     /*
-      The Staff class provides an encapsulation of club staff members, storing their name, salary, and role within the club.
+      The staff.Staff class provides an encapsulation of club staff members, storing their name, salary, and role within the club.
       The class enables salary adjustments for staff through the SalaryManageable interface.
      */
     private String name;

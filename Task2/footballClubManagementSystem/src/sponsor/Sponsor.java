@@ -1,6 +1,8 @@
-class Sponsor {
+package sponsor;
+
+public class Sponsor {
     /*
-      The Sponsor class represents an organization or individual providing financial support to the club, tracking their name,
+      The sponsor.Sponsor class represents an organization or individual providing financial support to the club, tracking their name,
       sponsorship amount, contract duration, and type of sponsorship.
       It includes the ability to extend sponsorship contracts.
      */

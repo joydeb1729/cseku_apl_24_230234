@@ -1,6 +1,8 @@
+package player;
+
 public class SeniorPlayer extends Player {
     /*
-     The SeniorPlayer class, a subclass of Player, adds attributes for tracking leadership skills and bonus earnings,
+     The player.SeniorPlayer class, a subclass of player.Player, adds attributes for tracking leadership skills and bonus earnings,
      which are typical for senior or veteran players within the club.
      This class can calculate a performance-based bonus based on the player’s salary.
      */

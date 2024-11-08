@@ -1,7 +1,11 @@
+package stadium;
+
+import interfaces.RevenueManageable;
+
 public class Stadium implements RevenueManageable {
     /*
-      The Stadium class includes attributes for name, capacity, location, and ticket sales.
-      As a RevenueManageable entity, the stadium can calculate revenue based on ticket sales and ticket pricing.
+      The stadium.Stadium class includes attributes for name, capacity, location, and ticket sales.
+      As a interfaces.RevenueManageable entity, the stadium can calculate revenue based on ticket sales and ticket pricing.
      */
 
     private String name;

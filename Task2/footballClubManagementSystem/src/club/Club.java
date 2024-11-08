@@ -1,9 +1,17 @@
+package club;
+
+import team.Team;
+import player.Player;
+import stadium.Stadium;
+import staff.*;
+import sponsor.Sponsor;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Club {
     /*
-     The Club class encapsulates the essential components of a football club, including its name, stadium, teams,
+     The club.Club class encapsulates the essential components of a football club, including its name, stadium, teams,
      staff, sponsors, location, and financial balance.
      It includes methods for managing teams, adding revenue, and paying out salaries, supporting the club's financial
      and operational dynamics.
@@ -88,8 +96,8 @@ public class Club {
 
     public void paySalaries() {
         for (Team team : teams) {
-            for (Player player : team.getPlayerList()) {
-                balance -= player.getSalary();
+            for (Player p : team.getPlayerList()) {
+                balance -= p.getSalary();
             }
             if (team.getCoach() != null) {
                 balance -= team.getCoach().getSalary();

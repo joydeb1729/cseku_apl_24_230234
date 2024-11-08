@@ -1,6 +1,8 @@
+package player;
+
 public class JuniorPlayer extends Player {
     /*
-     The JuniorPlayer class extends Player to include additional attributes specific to junior players, such as
+     The player.JuniorPlayer class extends player.Player to include additional attributes specific to junior players, such as
      school affiliation and scholarship status.
      This subclass caters to the unique management of young talents who might be on scholarship or affiliated
      with a school, supporting recruitment and development needs.

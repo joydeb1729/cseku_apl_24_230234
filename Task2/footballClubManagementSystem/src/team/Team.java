@@ -1,9 +1,13 @@
+package team;
+import player.Player;
+import staff.Coach;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Team {
     /*
-     The Team class represents a football team within the club, containing information about its name, players, coach, formation,
+     The team.Team class represents a football team within the club, containing information about its name, players, coach, formation,
      and match records (wins, losses, matches played).
      The class offers methods for adding or removing players, recording match results, and tracking overall team performance.
      */

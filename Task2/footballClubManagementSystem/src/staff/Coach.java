@@ -1,6 +1,9 @@
+package staff;
+import interfaces.SalaryManageable;
+
 public class Coach implements SalaryManageable {
     /*
-     The Coach class represents a coach, detailing their name, experience, preferred strategy, and salary.
+     The staff.Coach class represents a coach, detailing their name, experience, preferred strategy, and salary.
      This class implements SalaryManageable, so salary increments can be applied based on performance or experience level.
     */
 

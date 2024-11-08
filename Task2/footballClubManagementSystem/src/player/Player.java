@@ -1,6 +1,10 @@
+package player;
+
+import interfaces.*;
+
 public abstract class Player implements Injurable, SalaryManageable {
     /*
-     The abstract Player class provides the structure for representing a football player, including
+     The abstract player.Player class provides the structure for representing a football player, including
      personal attributes (name, age, position) and professional details (salary, experience).
      As an Injurable and SalaryManageable entity, it supports injury tracking and salary adjustments.
      This class serves as a base for both junior and senior players.
