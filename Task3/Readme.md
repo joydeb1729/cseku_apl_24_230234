@@ -32,6 +32,8 @@ FootballClubManagementSystem/
 │   │   │
 │   │   ├── team/              # Team-related models
 │   │   │   └── Team.java
+│   │   │
+│   │   ├── player/            # Player-related models
 │   │   │   └── Player.java
 │   │   │   └── JuniorPlayer.java
 │   │   │   └── SeniorPlayer.java
