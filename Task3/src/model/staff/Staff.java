@@ -13,13 +13,11 @@ public abstract class Staff {
     private String name;
     private String role;
 
-    // Constructor
     public Staff(String name, String role) {
         this.name = name;
         this.role = role;
     }
 
-    // Getters
     public String getName() { return name; }
     public String getRole() { return role; }
 }

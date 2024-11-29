@@ -26,7 +26,6 @@ import model.staff.Staff;
  */
 public class ClubView {
 
-    // Method to display general club information
     public void displayClubInfo(Club club) {
         System.out.println("Football Club: " + club.getName());
         System.out.println("Founded Year: " + club.getFoundedYear());
@@ -35,7 +34,6 @@ public class ClubView {
         System.out.println("Sponsor: " + club.getSponsor().getName() + ", Contribution: " + club.getSponsor().getContribution());
     }
 
-    // Method to display team and player information
     public void displayTeamInfo(Club club) {
         for (Team team : club.getTeams()) {
             System.out.println("Team: " + team.getName());
@@ -45,7 +43,6 @@ public class ClubView {
         }
     }
 
-    // Method to display staff (coach) information
     public void displayStaffInfo(Club club) {
         for (Staff staff : club.getStaffMembers()) {
             if (staff instanceof Coach) {

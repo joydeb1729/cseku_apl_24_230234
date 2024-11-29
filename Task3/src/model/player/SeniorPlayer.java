@@ -14,7 +14,6 @@ public class SeniorPlayer extends Player {
     private double salary;
     private boolean isInjured;
 
-    // Constructor
     public SeniorPlayer(String name, int age, String position, int yearsOfExperience, double salary) {
         super(name, age, position);
         this.yearsOfExperience = yearsOfExperience;
@@ -22,13 +21,11 @@ public class SeniorPlayer extends Player {
         this.isInjured = false;
     }
 
-    // Getter and Setter
     public int getYearsOfExperience() { return yearsOfExperience; }
     public double getSalary() { return salary; }
     public boolean isInjured() { return isInjured; }
     public void setInjured(boolean injured) { this.isInjured = injured; }
 
-    // Method to calculate salary
     public double calculateSalary() {
         return this.salary + (this.yearsOfExperience * 1000);
     }

@@ -15,7 +15,8 @@ import view.ClubView;
  * Methods:
  * - main: Initializes the MVC components and runs the application.
  * ================================================================
- */
+ *//**
+
 public class Main {
     public static void main(String[] args) {
         // Creating the view

@@ -12,14 +12,12 @@ public class Coach extends Staff {
     private String strategyExpertise;
     private int trainingHours;
 
-    // Constructor
     public Coach(String name, String role, String strategyExpertise, int trainingHours) {
         super(name, role);
         this.strategyExpertise = strategyExpertise;
         this.trainingHours = trainingHours;
     }
 
-    // Getters
     public String getStrategyExpertise() { return strategyExpertise; }
     public int getTrainingHours() { return trainingHours; }
 }

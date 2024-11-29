@@ -33,13 +33,13 @@ public class ClubController {
     private Club model;
     private ClubView view;
 
-    // Constructor for Controller
+
     public ClubController(Club model, ClubView view) {
         this.model = model;
         this.view = view;
     }
 
-    // Method to initialize the club data
+
     public void initializeClubData() {
         // Creating Junior Players
         JuniorPlayer juniorPlayer1 = new JuniorPlayer("John Doe", 17, "Forward", "Basic Training");
@@ -49,7 +49,7 @@ public class ClubController {
         SeniorPlayer seniorPlayer1 = new SeniorPlayer("James Bond", 29, "Goalkeeper", 10, 50000);
         SeniorPlayer seniorPlayer2 = new SeniorPlayer("Emma Watson", 27, "Defender", 6, 45000);
 
-        // Creating Teams and adding Players
+
         Team teamA = new Team("Junior Team");
         teamA.addPlayer(juniorPlayer1);
         teamA.addPlayer(juniorPlayer2);
@@ -58,18 +58,17 @@ public class ClubController {
         teamB.addPlayer(seniorPlayer1);
         teamB.addPlayer(seniorPlayer2);
 
-        // Creating a Stadium
+
         Stadium stadium = new Stadium("Old Trafford", "Stretford", 50000);
 
-        // Creating a Sponsor
+
         Sponsor sponsor = new Sponsor("Nike", 1000000);
 
-        // Creating Coaching Staff
+
         Staff coach = new Coach("Erik Ten Hag", "Coach", "Offensive Strategy", 25);
         List<Staff> staffMembers = new ArrayList<>();
         staffMembers.add(coach);
 
-        // Adding teams, staff, stadium, and sponsor to the club
         List<Team> teams = new ArrayList<>();
         teams.add(teamA);
         teams.add(teamB);
@@ -79,11 +78,9 @@ public class ClubController {
         achievements.add("FA Cup Winner 2022");
         achievements.add("UCL Winner 2008");
 
-        // Creating the club
         this.model = new Club("Manchester United", 1900, achievements, teams, staffMembers, stadium, sponsor);
     }
 
-    // Method to update the view with the latest data
     public void updateView() {
         view.displayClubInfo(model);
         view.displayTeamInfo(model);

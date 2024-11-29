@@ -29,7 +29,7 @@ public class Club {
     private Stadium stadium;
     private Sponsor sponsor;
 
-    // Constructor
+
     public Club(String name, int foundedYear, List<String> achievements, List<Team> teams,
                 List<Staff> staffMembers, Stadium stadium, Sponsor sponsor) {
         this.name = name;
@@ -41,7 +41,6 @@ public class Club {
         this.sponsor = sponsor;
     }
 
-    // Getters and Setters for all fields
     public String getName() { return name; }
     public int getFoundedYear() { return foundedYear; }
     public List<String> getAchievements() { return achievements; }

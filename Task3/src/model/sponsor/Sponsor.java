@@ -12,13 +12,11 @@ public class Sponsor {
     private String name;
     private double contribution;
 
-    // Constructor
     public Sponsor(String name, double contribution) {
         this.name = name;
         this.contribution = contribution;
     }
 
-    // Getters
     public String getName() { return name; }
     public double getContribution() { return contribution; }
 }

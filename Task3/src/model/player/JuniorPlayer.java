@@ -12,12 +12,11 @@ package model.player;
 public class JuniorPlayer extends Player {
     private String trainingLevel;
 
-    // Constructor
     public JuniorPlayer(String name, int age, String position, String trainingLevel) {
         super(name, age, position);
         this.trainingLevel = trainingLevel;
     }
 
-    // Getter and Setter
+
     public String getTrainingLevel() { return trainingLevel; }
 }

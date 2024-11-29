@@ -20,17 +20,14 @@ public class Team {
     private String name;
     private List<Player> players;
 
-    // Constructor
     public Team(String name) {
         this.name = name;
         this.players = new ArrayList<>();
     }
 
-    // Getter and Setter
     public String getName() { return name; }
     public List<Player> getPlayers() { return players; }
 
-    // Method to add players to the team
     public void addPlayer(Player player) {
         players.add(player);
     }
