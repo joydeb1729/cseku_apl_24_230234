@@ -1,54 +1,52 @@
 package view;
 
+
+
 import model.club.Club;
-import model.team.Team;
-import model.player.Player;
-import model.staff.Coach;
+import model.sponsor.Sponsor;
+import model.stadium.Stadium;
 import model.staff.Staff;
+import model.team.Team;
+
+import java.util.List;
 
 /**
  * ================================================================
  * View: ClubView.java
  * ================================================================
- * The 'ClubView' class is responsible for displaying information
- * related to the football club, its teams, players, and staff.
- *
- * This class contains methods to output the data in a human-readable
- * format (via the console in this case). The view interacts with the
- * controller to retrieve the latest data from the model and present it
- * to the user.
- *
- * Methods:
- * - displayClubInfo: Displays general club information (name, founded year, achievements, etc.)
- * - displayTeamInfo: Displays information about the teams and players.
- * - displayStaffInfo: Displays information about coaching staff (i.e., the coach).
+ * The 'ClubView' class is responsible for presenting information
+ * about the football club to the user. It includes methods to display
+ * club details, achievements, and related information in a user-friendly
+ * format.
  * ================================================================
  */
 public class ClubView {
 
-    public void displayClubInfo(Club club) {
-        System.out.println("Football Club: " + club.getName());
+    public void displayClubDetails(Club club) {
+        System.out.println("Club Name: " + club.getName());
         System.out.println("Founded Year: " + club.getFoundedYear());
-        System.out.println("Achievements: " + club.getAchievements());
-        System.out.println("Stadium: " + club.getStadium().getName() + ", Capacity: " + club.getStadium().getCapacity());
-        System.out.println("Sponsor: " + club.getSponsor().getName() + ", Contribution: " + club.getSponsor().getContribution());
-    }
+        System.out.println("Achievements: " + String.join(", ", club.getAchievements()));
 
-    public void displayTeamInfo(Club club) {
-        for (Team team : club.getTeams()) {
-            System.out.println("Team: " + team.getName());
-            for (Player player : team.getPlayers()) {
-                System.out.println("Player: " + player.getName() + ", Position: " + player.getPosition());
-            }
-        }
-    }
+        Stadium stadium = club.getStadium();
+        System.out.println("Stadium: " + stadium.getName() + " - " + stadium.getLocation() +
+                " (" + stadium.getCapacity() + " seats)");
 
-    public void displayStaffInfo(Club club) {
-        for (Staff staff : club.getStaffMembers()) {
-            if (staff instanceof Coach) {
-                Coach coachStaff = (Coach) staff;
-                System.out.println("Coach: " + coachStaff.getName() + ", Expertise: " + coachStaff.getStrategyExpertise() + ", Training Hours: " + coachStaff.getTrainingHours());
-            }
+        Sponsor sponsor = club.getSponsor();
+        System.out.println("Sponsor: " + sponsor.getName() +
+                " ($" + sponsor.getContribution() + ")");
+
+        System.out.println("Teams:");
+        List<Team> teams = club.getTeams();
+        for (Team team : teams) {
+            System.out.println("  - " + team.getName());
         }
+
+        System.out.println("Staffs:");
+        List<Staff> staffMembers = club.getStaffMembers();
+        for (Staff staff : staffMembers) {
+            System.out.println("  - Name: " + staff.getName() + ", Role: " + staff.getRole());
+        }
+
+        System.out.println();
     }
 }

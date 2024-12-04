@@ -12,11 +12,29 @@ package model.player;
 public class JuniorPlayer extends Player {
     private String trainingLevel;
 
-    public JuniorPlayer(String name, int age, String position, String trainingLevel) {
+    public JuniorPlayer(String name, int age, String position) {
         super(name, age, position);
         this.trainingLevel = trainingLevel;
     }
 
+    @Override
+    public int getAge() {
+        return super.getAge();
+    }
+
+    @Override
+    public String getName() {
+        return super.getName();
+    }
+
+    public void setTrainingLevel(String trainingLevel) {
+        this.trainingLevel = trainingLevel;
+    }
+
+    @Override
+    public String getPosition() {
+        return super.getPosition();
+    }
 
     public String getTrainingLevel() { return trainingLevel; }
 }

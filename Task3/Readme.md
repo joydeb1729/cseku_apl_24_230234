@@ -22,9 +22,16 @@ The project follows the **MVC (Model-View-Controller)** design pattern. Here’s
 ```plaintext
 FootballClubManagementSystem/
 │
-├── src/
+├── src/                       # Source files
 │   ├── controller/            # Controller classes
-│   │   └── ClubController.java
+│   │   ├── ClubController.java
+│   │   ├── SeniorPlayerController.java
+│   │   ├── JuniorPlayerController.java
+│   │   ├── TeamController.java
+│   │   ├── CoachController.java
+│   │   ├── StaffController.java
+│   │   ├── StadiumController.java
+│   │   └── SponsorController.java
 │   │
 │   ├── model/                 # Model classes
 │   │   ├── club/              # Club-related models
@@ -34,12 +41,12 @@ FootballClubManagementSystem/
 │   │   │   └── Team.java
 │   │   │
 │   │   ├── player/            # Player-related models
-│   │   │   └── Player.java
-│   │   │   └── JuniorPlayer.java
+│   │   │   ├── Player.java
+│   │   │   ├── JuniorPlayer.java
 │   │   │   └── SeniorPlayer.java
 │   │   │
 │   │   ├── staff/             # Staff-related models
-│   │   │   └── Staff.java
+│   │   │   ├── Staff.java
 │   │   │   └── Coach.java
 │   │   │
 │   │   ├── stadium/           # Stadium-related models
@@ -49,7 +56,14 @@ FootballClubManagementSystem/
 │   │   │   └── Sponsor.java
 │   │
 │   └── view/                  # View classes
-│       └── ClubView.java
+│       ├── ClubView.java
+│       ├── SeniorPlayerView.java
+│       ├── JuniorPlayerView.java
+│       ├── TeamView.java
+│       ├── CoachView.java
+│       ├── StaffView.java
+│       ├── StadiumView.java
+│       └── SponsorView.java
 │
 ├── resources/                 # Any static resources (images, etc.)
 │   └── images/                # (if required)

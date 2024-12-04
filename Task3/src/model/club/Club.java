@@ -48,4 +48,5 @@ public class Club {
     public List<Staff> getStaffMembers() { return staffMembers; }
     public Stadium getStadium() { return stadium; }
     public Sponsor getSponsor() { return sponsor; }
+
 }
